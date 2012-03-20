@@ -1,0 +1,95 @@
+/*  ==========================================
+     General
+    ==========================================  */
+
+	body {
+		padding-top: 30px; 	
+	}
+	
+	/*  ========================
+	     Layout
+	    ========================  */
+	
+		.center {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.form-actions-paddingCorrect {
+			margin-bottom: -18px;
+		}
+		
+	
+	/*  ========================
+	     Typography
+	    ========================  */
+	    
+	    .formTitleFont {
+			font-family: Tahoma;
+		}
+		
+		.fieldsetInfo {
+			margin-bottom: 25px;
+		}
+		
+		.textCenter {
+			text-align: center;
+		}
+	
+		.bold {
+			font-weight: bold;
+		}
+		
+		.gray5 {
+			color: hsla(0, 0%, 0%, 0.75);
+		}
+		.gray4 {
+			color: hsla(0, 0%, 0%, 0.65);
+		}
+		.gray3 {
+			color: hsla(0, 0%, 0%, 0.55);
+		}
+		.gray2 {
+			color: hsla(0, 0%, 0%, 0.35);
+		}
+		.gray1 {
+			color: hsla(0, 0%, 0%, 0.15);
+		}
+		
+		.whiteTextShadow5 {
+			text-shadow: 0 1px 0 #ffffff;
+		}	
+
+/*  ==========================================
+     Installation Pages
+    ==========================================  */
+   
+	.installationPageHeader {
+		font-weight: bold;
+	    height: 60px;
+	    margin-left: 40px;
+	    margin-top: 30px;
+	    text-align: center;	
+		}
+		.installationPageHeader > div {
+			display: inline;
+			font-family: Tahoma;	
+			font-size: 41px;			
+		}
+		.installationPageHeader span {
+			font-family: Tahoma;
+			font-size: 41px;	
+			color: #3AA0BE;			
+		}
+		.installationPageHeader .seperator {
+			background-color: rgba(0, 0, 0, 0.3);
+		    display: inline-block;
+		    height: 32px;
+		    margin: 0 10px -6px;
+		    width: 1px;		
+		}
+		.installationPageHeader > div + div + div {
+			display: inline;
+			font-family: Helvetica;	
+			font-size: 25px;			
+		}
