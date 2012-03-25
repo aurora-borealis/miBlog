@@ -30,16 +30,13 @@
 
       <div class="row">
       	<form class="well span3 whiteTextShadow5 center loginForm">
-      	  <label class="bold gray3" for="input01">Kullanıcı Adı:</label>
-      	  <input type="text" class="span3" id="input01">
+      	  <label class="bold gray3" for="username">Kullanıcı Adı:</label>
+      	  <input type="text" class="span3" name="username">
       	  
-      	  <label class="bold gray3" for="input01">Şifre:</label>
-      	  <input type="password" class="span3" id="input01">
+      	  <label class="bold gray3" for="password">Şifre:</label>
+      	  <input type="password" class="span3" name="password">
       	  
-      	  <a href="adminPage.html" type="submit" class="btn btn-info pull-right">
-      	    Giriş Yap
-      	    <i class="icon-chevron-right icon-white"></i> 
-      	  </a>
+      	  <input href="adminPage.html" type="submit" class="btn btn-info pull-right" value="Giriş Yap">
       	  
       	  <div class="clearBoth"></div>
       	</form>
