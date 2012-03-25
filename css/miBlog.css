@@ -2,94 +2,340 @@
      General
     ==========================================  */
 
-	body {
-		padding-top: 30px; 	
-	}
-	
-	/*  ========================
-	     Layout
-	    ========================  */
-	
+		body {
+		  padding-top: 30px; 	
+		}
+
+/*  ========================
+     Layout
+    ========================  */
+
+		.clearBoth {
+		  clear: both;
+		}
+		
 		.center {
-			margin-left: auto;
-			margin-right: auto;
+		  margin-left: auto;
+		  margin-right: auto;
 		}
 		
 		.form-actions-paddingCorrect {
-			margin-bottom: -18px;
+		  margin-bottom: -18px;
 		}
-		
-	
-	/*  ========================
-	     Typography
-	    ========================  */
-	    
-	    .formTitleFont {
-			font-family: Tahoma;
-		}
-		
-		.fieldsetInfo {
-			margin-bottom: 25px;
+
+
+/*  ========================
+     Typography
+    ========================  */
+
+		.formTitleFont {
+		  font-family: Tahoma;
 		}
 		
 		.textCenter {
-			text-align: center;
+		  text-align: center;
 		}
-	
+		
 		.bold {
-			font-weight: bold;
+		  font-weight: bold;
 		}
 		
 		.gray5 {
-			color: hsla(0, 0%, 0%, 0.75);
+		  color: rgba(0, 0, 0, 0.75);
 		}
 		.gray4 {
-			color: hsla(0, 0%, 0%, 0.65);
+		  color: rgba(0, 0, 0, 0.65);
 		}
 		.gray3 {
-			color: hsla(0, 0%, 0%, 0.55);
+		  color: rgba(0, 0, 0, 0.55);
 		}
 		.gray2 {
-			color: hsla(0, 0%, 0%, 0.35);
+		  color: rgba(0, 0, 0, 0.35);
 		}
 		.gray1 {
-			color: hsla(0, 0%, 0%, 0.15);
+		  color: rgba(0, 0, 0, 0.15);
+		}
+		
+		.green4 {
+			color: #468847;
 		}
 		
 		.whiteTextShadow5 {
-			text-shadow: 0 1px 0 #ffffff;
+		  text-shadow: 0 1px 0 #ffffff;
+		}
+
+/*  ========================
+     Ready Components
+    ========================  */
+
+		span.wellOuterTitle {
+		  display: block;
+		  font-family: inherit;
+		  font-weight: 15px;
+		  font-weight: bold;
+		  padding: 0 0 5px 7px;
+		  color: #999999;
+		  text-transform: uppercase;
+			}
+			.wellOuterTitleHelper {
+				display: inline-block;
+			  text-transform: none;
+			  margin-bottom: -4px;
+				}
+				.wellOuterTitleHelper .seperator {
+					border-left: 1px solid #999999;
+					float: left;
+					height: 13px;
+					margin-left: 7px;
+					margin-right: 7px;
+					margin-top: 2px;
+					width: 0;
+				}
+				.wellOuterTitleHelper span {
+					color: #999999;
+					float: left;
+					font-weight: normal;
+				}
+		
+		.wellOpposite {
+			position: relative;
+		  min-height: 20px;
+		  padding: 19px;
+		  margin-bottom: 20px;
+			-webkit-border-radius: 4px;
+		  -moz-border-radius: 4px;
+		  border-radius: 4px;
+		  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+		  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+		  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+		  border: 1px solid #E1E1E1;
+			background: url(../img/noise.png) repeat #F2F2F2;
 		}	
+		.wellOpposite-small {
+		  padding: 9px;
+		  -webkit-border-radius: 3px;
+		  -moz-border-radius: 3px;
+		  border-radius: 3px;
+		}
+		
+		.buttonSideInfo {
+			line-height: 27px;
+			float: right;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		
+		.emptyFooter {
+		  height: 60px;
+		}
 
 /*  ==========================================
      Installation Pages
     ==========================================  */
-   
-	.installationPageHeader {
-		font-weight: bold;
-	    height: 60px;
-	    margin-left: 40px;
-	    margin-top: 30px;
-	    text-align: center;	
+
+		.installationPageHeader {
+		  font-weight: bold;
+		  height: 60px;
+		  margin-left: 40px;
+		  margin-top: 30px;
+		  text-align: center;	
+			}
+			.installationPageHeader > div {
+			  display: inline;
+			  font-family: Tahoma;	
+			  font-size: 41px;			
+			}
+			.installationPageHeader span {
+			  font-family: Tahoma;
+			  font-size: 41px;	
+			  color: #3AA0BE;			
+			}
+			.installationPageHeader .seperator {
+			  background-color: rgba(0, 0, 0, 0.3);
+			  display: inline-block;
+			  height: 32px;
+			  margin: 0 10px -6px;
+			  width: 1px;		
+			}
+			.installationPageHeader > div + div + div {
+			  display: inline;
+			  font-family: Helvetica;	
+			  font-size: 25px;			
+			}
+
+		.mainInfos {
+			float: left;
+			margin: 12px 0 -6px;
 		}
-		.installationPageHeader > div {
-			display: inline;
-			font-family: Tahoma;	
-			font-size: 41px;			
+		
+		.mainInfosSeperator {
+			border-right: 1px solid #ffffff;
+	    bottom: 20px;
+	    left: 410px;
+	    position: absolute;
+	    top: 20px;
+			border-left: 1px solid #E4E4E4;
 		}
-		.installationPageHeader span {
-			font-family: Tahoma;
-			font-size: 41px;	
-			color: #3AA0BE;			
+		
+		.uploadAvatar {
+			float: right;
+	    margin-top: 10px;
+	    text-align: center;
+	    width: 205px;
+			}
+			.uploadAvatar h6 {
+				
+			}
+			.uploadAvatar img {
+			
+			}
+			.uploadAvatar span {
+				display: block;
+		    width: 200px;
+		    margin-top: 4px;
+		    margin-bottom: 7px;
+			}
+			.uploadAvatar > div {
+			
+				}
+				.uploadAvatar input {
+					width: 90px;
+				}
+				
+		.contactInfos {
+			float: left;
+			margin: 12px 0 -6px;
 		}
-		.installationPageHeader .seperator {
-			background-color: rgba(0, 0, 0, 0.3);
-		    display: inline-block;
-		    height: 32px;
-		    margin: 0 10px -6px;
-		    width: 1px;		
-		}
-		.installationPageHeader > div + div + div {
-			display: inline;
-			font-family: Helvetica;	
-			font-size: 25px;			
-		}
+		
+/*  ==========================================
+     Login 
+    ==========================================  */
+
+		.loginForm {
+			margin-top: 100px;
+			float: none;
+			}
+			.loginForm a[type="submit"] {
+				margin-top: 8px;
+			}
+
+/*  ==========================================
+     Admin Page
+    ==========================================  */
+
+		.entryListItemContainer {
+		  position: relative;
+		  clear: both;
+		  overflow: hidden;
+			}
+			.entryListItemDay {
+			  float: left;
+			  padding: 21px 11px 25px 6px;
+				}
+				.entryListItemDay span {
+				  color: rgba(0, 0, 0, 0.3);
+				  display: inline-block;
+				  font-weight: bold;
+				  margin-top: 3px;
+				}
+				.entryListItemDay div {
+				  position: absolute;
+				  top: 2px;
+				  bottom: 2px;
+				  left: 30px;
+				  width: 1px;
+				  background-color: #cecece;
+				}
+			.entryListItemContent {
+			  float: left;
+			  margin-left: 10px;
+			  width: 570px;
+				}
+				span.entryListItemCategory {
+				  display: block;
+					}
+					span.entryListItemCategory i {
+					  opacity: 0.20;
+					}
+					span.entryListItemCategory span {
+					  opacity: 0.20;
+					  margin-left: 3px;
+					  margin-right: 3px;
+					}
+					span.entryListItemCategory a {
+					  text-decoration: none;
+					  color: rgba(0, 0, 0, 0.30);
+						}
+						span.entryListItemCategory a:hover {
+						  color: rgba(0, 0, 0, 0.50);
+						  cursor: pointer;
+						}
+				a.entryListItemTitle {
+				  display: inline-block;	
+				  margin-top: 5px;
+				  margin-bottom: 5px;
+				  font-size: 15px;
+				  color: rgba(0, 0, 0, 0.75);
+					}
+					a.entryListItemTitle:hover {
+					  color: rgba(17, 17, 17, 0.95);
+					  cursor: pointer;
+					  text-decoration: none;
+					}
+				.entryListItemTags {
+				
+				}
+				span.entryListItemTagsBegin {
+				  opacity: 0.20;
+					}
+					span.entryListItemTagsBegin span {
+					  margin-left: 3px;
+					  margin-right: 3px;
+					}
+				.entryListItemTags a {
+				  text-decoration: none;
+				  color: rgba(0, 0, 0, 0.30);
+					}
+					.entryListItemTags a:hover {
+					  color: rgba(0, 0, 0, 0.50);
+					  cursor: pointer;
+					}
+					.entryListItemTags span.coma {
+					  color: rgba(0, 0, 0, 0.55);
+					}
+				.entryListItemButtons {
+				  position: absolute; 
+				  top: 2px;
+				  right: -100px;  
+				  opacity: 0;
+				  -webkit-transition: right 0.2s ease-in-out, opacity 0.4s ease;
+				  -moz-transition: right 0.2s ease-in-out, opacity 0.4s ease;
+					}
+					.entryListItemContainer:hover .entryListItemButtons {
+					  opacity: 1;
+					  right: 3px;
+					}	
+		
+		.entryListItemSeperator {
+		  border-top: 1px solid #E4E4E4;
+		  border-bottom: 1px solid #ffffff;
+		  margin-top: 10px;
+		  margin-bottom: 10px;
+		}		
+		
+/*  ==========================================
+     New Entry 
+    ==========================================  */
+
+		.entryTitleAndDate {
+			
+			}
+			.entryTitleAndDate > div {
+				float: left;
+			}
+			.entryTitleAndDate input {
+				margin-left: 15px;
+			}  
+			.entryTitleAndDate .dateField {
+				width: 80px;
+			}
