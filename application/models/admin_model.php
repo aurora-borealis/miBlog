@@ -13,4 +13,18 @@ class Admin_model extends mB_Model {
   {
     return ($this->db->count_all('admin') == 0) ? false : true;
   }
+  
+  public function login($post) {
+    $result = $this->db->select('*')
+                       ->from('admin')
+                       ->where(array('kullanici_adi' => $post['username']));
+    if ($result->num_rows() == 0)
+      return false;
+    
+    $userdata = $result->first_row();
+    if ($userdata['sifre'] != sha1($post['password']))
+      return false;
+    
+    return $userdata;
+  }
 }

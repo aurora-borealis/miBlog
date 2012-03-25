@@ -1,11 +1,6 @@
 <?php
 
 class BlogInstall extends mB_Controller {
-  public function __construct() {
-    parent::__construct();
-    $this->load->model('Admin_model');
-  }
-
   public function index() {
     if ($this->Admin_model->isInstalled())
       redirect('home');
