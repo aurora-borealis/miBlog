@@ -1,27 +1,13 @@
 <?php
 
-class BlogInstall extends CI_Controller {
+class BlogInstall extends mB_Controller {
 
   public function index() {
-    $data['link'] = array(
-        array(
-            'href' => 'css/bootstrap.css',
-            'rel' => 'stylesheet',
-            'type' => 'text/css'
-        ),
-        array(
-            'href' => 'css/bootstrap-responsive.css',
-            'rel' => 'stylesheet',
-            'type' => 'text/css'
-        ),
-        array(
-            'href' => 'css/miBlog.css',
-            'rel' => 'stylesheet',
-            'type' => 'text/css'
-        )
-    );
-
-    $this->load->view('blogInstall_index', $data);
+    $this->load->view('blogInstall_index', $this->data);
   }
-
+  
+  public function hakkinda() {
+    $data = array();
+    $this->load->view('blogInstall_hakkinda', $data);
+  }
 }
