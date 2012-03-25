@@ -38,7 +38,7 @@
       </div> <!-- end .row -->
 
       <div class="row">
-      	<form class="form-horizontal whiteTextShadow5">
+        <?=form_open('blogInstall', array('class' => 'form-horizontal whiteTextShadow5'))?>
       	  <fieldset>
       	  	<span class="wellOuterTitle offset2">KULLANICI BİLGİLERİ</span>
       	  	<div class="wellOpposite wellOpposite-small span8 offset2">
