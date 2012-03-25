@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://locallhost/miBlog/';
+$config['base_url']	= 'http://localhost/miBlog/';
 
 /*
 |--------------------------------------------------------------------------
