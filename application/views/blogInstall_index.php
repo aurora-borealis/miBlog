@@ -44,17 +44,17 @@
       	  	<div class="wellOpposite wellOpposite-small span8 offset2">
       	  		<div class="mainInfos">
       	  			<div class="control-group">
-      	  			  <label class="control-label bold gray3" for="input01">Kullanıcı Adı:</label>
+      	  			  <label class="control-label bold gray3" for="username">Kullanıcı Adı:</label>
       	  			  <div class="controls">
-      	  			    <input type="text" class="span3" placeholder="omerfaruk" id="input01">
+      	  			    <input type="text" class="span3" placeholder="omerfaruk" name="username">
       	  			    <p class="help-block gray2">Bloğunuza giriş yaparken kullanacağınız ad, esas adınız ve soyadınız olmak zorunda değil.</p>
       	  			  </div>
       	  			</div> 
       	  			
       	  			<div class="control-group">
-      	  			  <label class="control-label bold gray3" for="input01">Şifre:</label>
+      	  			  <label class="control-label bold gray3" for="password">Şifre:</label>
       	  			  <div class="controls">
-      	  			    <input type="password" class="span3" id="input01">
+      	  			    <input type="password" class="span3" name="password">
       	  			    <p class="help-block gray2">En az 5 basamaklı olmalı; İngilizce harfler, sayı ve noktalama işaretleri kullanılabilir.</p>
       	  			  </div>
       	  			</div> 
@@ -72,17 +72,17 @@
       	  	<div class="wellOpposite wellOpposite-small span8 offset2">
       	  		<div class="mainInfos">
       	  			<div class="control-group">
-      	  			  <label class="control-label bold gray3" for="input01">Blog Başlığı:</label>
+      	  			  <label class="control-label bold gray3" for="blogTitle">Blog Başlığı:</label>
       	  			  <div class="controls">
-      	  			    <input type="text" class="span3" id="input01">
+      	  			    <input type="text" class="span3" name="blogTitle">
       	  			    <p class="help-block gray2">En üst kısmında gözükecek başlık.</p>
       	  			  </div>
       	  			</div> 
       	  			
       	  			<div class="control-group">
-      	  			  <label class="control-label bold gray3" for="input01">Blog Hakkında:</label>
+      	  			  <label class="control-label bold gray3" for="aboutBlog">Blog Hakkında:</label>
       	  			  <div class="controls">
-      	  			    <textarea class="input-xlarge span3" id="textarea" rows="4"></textarea>
+      	  			    <textarea class="input-xlarge span3" name="aboutBlog" rows="4"></textarea>
       	  			    <p class="help-block gray2">Blog başlığının yanında gözükecek kısa not. En fazla 160 karakter olabilir.</p>
       	  			  </div>
       	  			</div> 
@@ -91,10 +91,10 @@
       	  </fieldset>
       	  
       	  <div class="well well-small span8 offset2">
-            <a href="aboutInstall.html" type="submit" class="btn btn-success pull-right">
+            <input href="aboutInstall.html" type="submit" class="btn btn-success pull-right">
               Devam
               <i class="icon-chevron-right icon-white"></i> 
-            </a>
+            >
           </div> <!-- end .well -->
       	</form>
         
