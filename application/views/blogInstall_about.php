@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Yönetici Sayfası</title>
+    <title>Hakkında Sayfası Kurulum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 
     <script type="text/javascript">
-      $('.dropdown-toggle').dropdown();
+    	
     </script>
   </head>
 
@@ -33,254 +33,117 @@
         <div class="installationPageHeader">
           <div class="gray4">mi<span>Blog</span></div>
           <div class="seperator"></div>
-          <div class="gray2">Yönetici Sayfası</div>
+          <div class="gray2">Hakkında Sayfası Kurulumu</div>
         </div>
       </div> <!-- end .row -->
 
       <div class="row">
         <div class="well well-small span8 offset2">
-          <a href="#" class="btn btn-warning pull-left">
-            <i class="icon-plus icon-white"></i> 
-            Yeni Yazı Ekle
+          <a href="blogInstall.html" class="btn btn-info pull-left">
+            <i class="icon-chevron-left icon-white"></i> 
+            Geri
           </a>
 
-          <div class="btn-group pull-right">
-            <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">
-              Hesabım
-              <i class="icon-chevron-down icon-white"></i>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Blog Bilgileri</a></li>
-              <li><a href="#">Hakkımda Sayfası</a></li>
-              <li><a href="#">Şifre Değiştir</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Çıkış Yap</a></li>
-            </ul>
-          </div>
+          <a href="login.html" type="submit" class="btn btn-success pull-right">
+            <i class="icon-ok icon-white"></i> 
+            Bloğu Oluştur
+          </a>
+          
+          <span class="buttonSideInfo gray2">Bu sayfayı boş bırakıp daha sonra da doldurabilirsiniz</span>
         </div> <!-- end .well -->
       </div> <!-- end .row -->
 
       <div class="row">
-        <span class="wellOuterTitle offset2">Haziran 2012</span>
-        <div class="wellOpposite wellOpposite-small span8 offset2">
-          <div class="entryListItemContainer whiteTextShadow5">
-            <div class="entryListItemDay">
-              <span>23</span>
-              <div></div>
-            </div>
-            <div class="entryListItemContent">
-              <span class="entryListItemCategory">
-                <i class="icon-th-list"></i>
-                <span>|</span>
-                <a href="#">Kategori</a>
-              </span>
-              <a class="entryListItemTitle">Yazı Başlığı Gelecek Buraya ve Baya Uzun Olabilir</a>
-              <div class="entryListItemTags">
-                <span class="entryListItemTagsBegin">
-                  <i class="icon-tag"></i>
-                  <span>|</span>
-                </span>
-                <a href="">etiket</a>
-                <span class="coma">, </span>
-                <a href="">bunların</a>
-                <span class="coma">, </span>
-                <a href="">hepsi</a>
-                <span class="coma">, </span>
-                <a href="">böyle</a>
-              </div>
-            </div> <!-- end .entryListItemContent -->
-
-            <div class="entryListItemButtons btn-group">
-              <a href="#" title="Düzenle" class="btn btn-mini btn-info pull-left">
-                <i class="icon-pencil icon-white"></i>
-              </a>
-              <a href="#" title="Sil" class="btn btn-mini btn-danger pull-left">
-                <i class="icon-remove icon-white"></i>
-              </a>
-            </div>
-
-            <div class="clearBoth"></div>
-          </div> <!-- end .entryListItemContainer -->
-
-          <div class="entryListItemSeperator"></div>
-
-          <div class="entryListItemContainer whiteTextShadow5">
-            <div class="entryListItemDay">
-              <span>12</span>
-              <div></div>
-            </div>
-            <div class="entryListItemContent">
-              <span class="entryListItemCategory">
-                <i class="icon-th-list"></i>
-                <span>|</span>
-                <a href="#">PHP Programlama</a>
-              </span>
-              <a class="entryListItemTitle">Birisi Codeigniter'ı İyi Öğrenmezse Yandık</a>
-              <div class="entryListItemTags">
-                <span class="entryListItemTagsBegin">
-                  <i class="icon-tag"></i>
-                  <span>|</span>
-                </span>
-                <a href="">size</a>
-                <span class="coma">, </span>
-                <a href="">bu</a>
-                <span class="coma">, </span>
-                <a href="">laflar</a>
-              </div>
-            </div> <!-- end .entryListItemContent -->
-
-            <div class="entryListItemButtons btn-group">
-              <a href="#" title="Düzenle" class="btn btn-mini btn-info pull-left">
-                <i class="icon-pencil icon-white"></i>
-              </a>
-              <a href="#" title="Sil" class="btn btn-mini btn-danger pull-left">
-                <i class="icon-remove icon-white"></i>
-              </a>
-            </div>
-
-            <div class="clearBoth"></div>
-          </div> <!-- end .entryListItemContainer -->
-        </div>
-
+      	<form class="form-horizontal whiteTextShadow5">
+      	  <fieldset>
+      	  	<span class="wellOuterTitle offset2">TEMEL BİLGİLER</span>
+      	  	<div class="wellOpposite wellOpposite-small span8 offset2">
+      	  		<div class="mainInfos">
+      	  			<div class="control-group">
+      	  			  <label class="control-label bold gray3" for="input01">Adınız:</label>
+      	  			  <div class="controls">
+      	  			    <input type="text" class="span3" placeholder="Ömer Faruk" id="input01">
+      	  			  </div>
+      	  			</div> 
+      	  			
+      	  			<div class="control-group">
+      	  			  <label class="control-label bold gray3" for="input01">Soyadınız:</label>
+      	  			  <div class="controls">
+      	  			    <input type="text" class="span3" placeholder="Demir" id="input01">
+      	  			  </div>
+      	  			</div> 
+      	  			
+      	  			<div class="control-group">
+      	  			  <label class="control-label bold gray3" for="input01">Kısaca Hakkınızda:</label>
+      	  			  <div class="controls">
+      	  			    <textarea class="input-xlarge span3" id="textarea" rows="5"></textarea>
+      	  			    <p class="help-block gray2">En fazla 160 karakter olmalı</p>
+      	  			  </div>
+      	  			</div>
+      	  		</div> <!-- end .mainInfos -->
+      	  		
+      	  		<div class="mainInfosSeperator"></div>
+      	  			
+      	  		<div class="uploadAvatar">
+      	  			<h6>PROFİL RESMİ</h6>
+      	  			<img src="img/about.png" alt="" />
+      	  			<span class="gray2">Avatarınızı miBlog / avatar kalsörüne atıp adını buraya yazın</span>
+      	  			<div class="input-append">
+	                <input id="appendedPrependedInput" placeholder="Dosya ismi" size="16" type="text"><a href="#" class="btn" type="button">Guncelle</a>
+	              </div>
+      	  		</div> <!-- end .uploadAvatar -->
+      	  	</div>  <!-- end .wellOpposite -->
+      	  </fieldset>
+      	  
+      	  <fieldset>
+      	  	<span class="wellOuterTitle offset2">İLETİŞİM BİLGİLERİ</span>
+      	  	<div class="wellOpposite wellOpposite-small span8 offset2">
+      	  		<div class="contactInfos">
+      	  			<div class="control-group">
+      	  			  <label class="control-label bold gray3" for="input01">Mail Adresiniz:</label>
+      	  			  <div class="controls">
+      	  			    <input type="email" class="span3" id="input01">
+      	  			  </div>
+      	  			</div> 
+      	  			
+      	  			<div class="control-group">
+      	  			  <label class="control-label bold gray3" for="input01">Facebook:</label>
+      	  			  <div class="controls">
+      	  			    <input type="text" class="span3" id="input01">
+      	  			  </div>
+      	  			</div> 
+      	  			
+      	  			<div class="control-group">
+      	  			  <label class="control-label bold gray3" for="input01">Twitter:</label>
+      	  			  <div class="controls">
+      	  			    <input type="text" class="span3" id="input01">
+      	  			  </div>
+      	  			</div> 
+      	  			
+      	  			<div class="control-group">
+      	  			  <label class="control-label bold gray3" for="input01">Linkedin:</label>
+      	  			  <div class="controls">
+      	  			    <input type="text" class="span3" id="input01">
+      	  			  </div>
+      	  			</div> 
+      	  		</div> <!-- end .mainInfos -->
+      	  	</div>  <!-- end .wellOpposite -->
+      	  </fieldset>
+      	  
+      	  <div class="well well-small span8 offset2">
+      	  	<a href="blogInstall.html" class="btn btn-info pull-left">
+      	  	  <i class="icon-chevron-left icon-white"></i> 
+      	  	  Geri
+      	  	</a>
+      	  	
+            <a href="login.html" type="submit" class="btn btn-success pull-right">
+              <i class="icon-ok icon-white"></i> 
+              Bloğu Oluştur
+            </a>
+          </div> <!-- end .well -->
+      	</form>
+        
         <div class="clearBoth"></div>
-
-        <span class="wellOuterTitle offset2">Mayıs 2012</span>
-        <div class="wellOpposite wellOpposite-small span8 offset2">
-          <div class="entryListItemContainer whiteTextShadow5">
-            <div class="entryListItemDay">
-              <span>07</span>
-              <div></div>
-            </div>
-            <div class="entryListItemContent">
-              <span class="entryListItemCategory">
-                <i class="icon-th-list"></i>
-                <span>|</span>
-                <a href="#">Kategori</a>
-              </span>
-              <a class="entryListItemTitle">Yazı Başlığı Gelecek Buraya ve Baya Uzun Olabilir Şimdi Onu Deneyelim Bakalım</a>
-              <div class="entryListItemTags">
-                <span class="entryListItemTagsBegin">
-                  <i class="icon-tag"></i>
-                  <span>|</span>
-                </span>
-                <a href="">etiket</a>
-                <span class="coma">, </span>
-                <a href="">bunların</a>
-                <span class="coma">, </span>
-                <a href="">hepsi</a>
-                <span class="coma">, </span>
-                <a href="">böyle</a>
-                <span class="coma">, </span>
-                <a href="">etiket</a>
-                <span class="coma">, </span>
-                <a href="">bunların</a>
-                <span class="coma">, </span>
-                <a href="">hepsi</a>
-                <span class="coma">, </span>
-                <a href="">böyle</a>
-                <span class="coma">, </span>
-                <a href="">etiket</a>
-                <span class="coma">, </span>
-                <a href="">bunların</a>
-                <span class="coma">, </span>
-                <a href="">hepsi</a>
-                <span class="coma">, </span>
-                <a href="">böyle</a>
-                <span class="coma">, </span>
-                <a href="">hepsi</a>
-                <span class="coma">, </span>
-                <a href="">böyle</a>
-              </div>
-            </div> <!-- end .entryListItemContent -->
-
-            <div class="entryListItemButtons btn-group">
-              <a href="#" title="Düzenle" class="btn btn-mini btn-info pull-left">
-                <i class="icon-pencil icon-white"></i>
-              </a>
-              <a href="#" title="Sil" class="btn btn-mini btn-danger pull-left">
-                <i class="icon-remove icon-white"></i>
-              </a>
-            </div>
-
-            <div class="clearBoth"></div>
-          </div> <!-- end .entryListItemContainer -->
-
-          <div class="entryListItemSeperator"></div>
-
-          <div class="entryListItemContainer whiteTextShadow5">
-            <div class="entryListItemDay">
-              <span>12</span>
-              <div></div>
-            </div>
-            <div class="entryListItemContent">
-              <span class="entryListItemCategory">
-                <i class="icon-th-list"></i>
-                <span>|</span>
-                <a href="#">PHP Programlama</a>
-              </span>
-              <a class="entryListItemTitle">Birisi Codeigniter'ı İyi Öğrenmezse Yandık Heyoo Bu da Deneme Ama Çok Daha Uzun Bir Başlık Denemesi</a>
-              <div class="entryListItemTags">
-                <span class="entryListItemTagsBegin">
-                  <i class="icon-tag"></i>
-                  <span>|</span>
-                </span>
-                <a href="">size</a>
-                <span class="coma">, </span>
-                <a href="">bu</a>
-                <span class="coma">, </span>
-                <a href="">laflar</a>
-              </div>
-            </div> <!-- end .entryListItemContent -->
-
-            <div class="entryListItemButtons btn-group">
-              <a href="#" title="Düzenle" class="btn btn-mini btn-info pull-left">
-                <i class="icon-pencil icon-white"></i>
-              </a>
-              <a href="#" title="Sil" class="btn btn-mini btn-danger pull-left">
-                <i class="icon-remove icon-white"></i>
-              </a>
-            </div>
-
-            <div class="clearBoth"></div>
-          </div> <!-- end .entryListItemContainer -->
-
-          <div class="entryListItemSeperator"></div>
-
-          <div class="entryListItemContainer whiteTextShadow5">
-            <div class="entryListItemDay">
-              <span>12</span>
-              <div></div>
-            </div>
-            <div class="entryListItemContent">
-              <span class="entryListItemCategory">
-                <i class="icon-th-list"></i>
-                <span>|</span>
-                <a href="#">PHP Programlama</a>
-              </span>
-              <a class="entryListItemTitle">Birisi Codeigniter'ı İyi Öğrenmezse Yandık</a>
-              <div class="entryListItemTags">
-                <span class="entryListItemTagsBegin">
-                  <i class="icon-tag"></i>
-                  <span>|</span>
-                </span>
-                <a href="">size</a>
-                <span class="coma">, </span>
-                <a href="">bu</a>
-                <span class="coma">, </span>
-                <a href="">laflar</a>
-              </div>
-            </div> <!-- end .entryListItemContent -->
-
-            <div class="entryListItemButtons btn-group">
-              <a href="#" title="Düzenle" class="btn btn-mini btn-info pull-left">
-                <i class="icon-pencil icon-white"></i>
-              </a>
-              <a href="#" title="Sil" class="btn btn-mini btn-danger pull-left">
-                <i class="icon-remove icon-white"></i>
-              </a>
-            </div>
-          </div> <!-- end .entryListItemContainer -->
-        </div>
       </div> <!-- end .row -->
 
       <div class="emptyFooter"></div>
