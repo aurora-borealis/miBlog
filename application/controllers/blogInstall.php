@@ -6,8 +6,8 @@ class BlogInstall extends mB_Controller {
     $this->load->view('blogInstall_index', $this->data);
   }
   
-  public function hakkinda() {
+  public function about() {
     $data = array();
-    $this->load->view('blogInstall_hakkinda', $data);
+    $this->load->view('blogInstall_about', $data);
   }
 }
