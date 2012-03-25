@@ -6,6 +6,10 @@ class Session extends mB_Controller {
   }
   
   public function login () {
+    // site kurulu değilse kurulum sayfasına yönlendir
+    if (!$this->Admin_model->isInstalled())
+      redirect('blogInstall');
+    
     if ($this->session->userdata('admin') !== false)
       redirect('home');
     
