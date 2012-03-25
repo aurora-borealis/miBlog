@@ -29,13 +29,15 @@
   <body>
 
       <div class="row">
-        <?=form_open('login', array('class' => 'well span3 whiteTextShadow5 center loginForm'))?>
+        <?=form_open('session/login', array('class' => 'well span3 whiteTextShadow5 center loginForm'))?>
       	  <label class="bold gray3" for="username">Kullanıcı Adı:</label>
       	  <input type="text" class="span3" name="username">
       	  
       	  <label class="bold gray3" for="password">Şifre:</label>
       	  <input type="password" class="span3" name="password">
-      	  
+          <?php if (isset($loginError)): ?>
+          <div class="alert alert-error"><?php echo $loginError; ?></div>
+      	  <?php endif; ?>
       	  <input href="adminPage.html" type="submit" class="btn btn-info pull-right" value="Giriş Yap">
       	  
       	  <div class="clearBoth"></div>
