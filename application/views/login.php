@@ -29,7 +29,7 @@
   <body>
 
       <div class="row">
-      	<form class="well span3 whiteTextShadow5 center loginForm">
+        <?=form_open('login', array('class' => 'well span3 whiteTextShadow5 center loginForm'))?>
       	  <label class="bold gray3" for="username">Kullanıcı Adı:</label>
       	  <input type="text" class="span3" name="username">
       	  
