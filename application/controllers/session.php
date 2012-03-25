@@ -11,14 +11,14 @@ class Session extends mB_Controller {
       redirect('blogInstall');
     
     if ($this->session->userdata('admin') !== false)
-      redirect('home');
+      redirect('admin');
     
     if (!empty($_POST)) {
       if (($userdata = $this->Admin_model->login($_POST)) === false)
         $this->data['loginError'] = 'Kullanıcı adı veya şifre yanlış';
       else {
         $this->session->set_userdata('admin', $userdata);
-        redirect('home');
+        redirect('admin');
       }
     }
     $this->load->view('login', $this->data);
