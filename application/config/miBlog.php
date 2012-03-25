@@ -17,3 +17,7 @@ $config['miBlog']['css'] = array(
     'type' => 'text/css'
   )
 );
+
+$config['miBlog']['js'] = array(
+  'js/bootstrap.min.js'
+);
