@@ -91,10 +91,7 @@
       	  </fieldset>
       	  
       	  <div class="well well-small span8 offset2">
-            <input href="aboutInstall.html" type="submit" class="btn btn-success pull-right">
-              Devam
-              <i class="icon-chevron-right icon-white"></i> 
-            >
+            <input href="aboutInstall.html" type="submit" class="btn btn-success pull-right" value="Devam">
           </div> <!-- end .well -->
       	</form>
         
