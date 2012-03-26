@@ -86,7 +86,7 @@
       	  			
       	  		<div class="uploadAvatar">
       	  			<h6>PROFİL RESMİ</h6>
-      	  			<img src="img/about.png" alt="" />
+      	  			<img src="../../img/about.png" alt="" />
       	  			<span class="gray2">Avatarınızı miBlog / avatar kalsörüne atıp adını buraya yazın</span>
       	  			<div class="input-append">
 	                <input id="appendedPrependedInput" placeholder="Dosya ismi" size="16" type="text"><a href="#" class="btn" type="button">Guncelle</a>
